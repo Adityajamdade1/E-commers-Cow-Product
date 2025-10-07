@@ -115,40 +115,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Features Section */}
-      <div style={containerStyle}>
-        <div style={featuresStyle}>
-          <div style={featureCardStyle}>
-            <div style={featureIconStyle}>🚚</div>
-            <h3 style={featureTitleStyle}>Free Delivery</h3>
-            <p style={featureDescStyle}>
-              Free delivery on orders over $50. Fresh products delivered to your doorstep.
-            </p>
-          </div>
-          <div style={featureCardStyle}>
-            <div style={featureIconStyle}>🌱</div>
-            <h3 style={featureTitleStyle}>100% Organic</h3>
-            <p style={featureDescStyle}>
-              All our products are certified organic and sourced from local farms.
-            </p>
-          </div>
-          <div style={featureCardStyle}>
-            <div style={featureIconStyle}>❄️</div>
-            <h3 style={featureTitleStyle}>Always Fresh</h3>
-            <p style={featureDescStyle}>
-              Temperature-controlled storage ensures maximum freshness and quality.
-            </p>
-          </div>
-          <div style={featureCardStyle}>
-            <div style={featureIconStyle}>🏆</div>
-            <h3 style={featureTitleStyle}>Premium Quality</h3>
-            <p style={featureDescStyle}>
-              Award-winning dairy products that meet the highest quality standards.
-            </p>
-          </div>
-        </div>
-      </div>
-
       {/* Featured Products */}
       <div style={containerStyle}>
         <div style={sectionStyle}>
@@ -175,6 +141,40 @@ const Home = () => {
           <a href="/shop" style={ctaButtonStyle}>
             Start Shopping
           </a>
+        </div>
+      </div>
+
+      {/* Features Section */}
+      <div style={containerStyle}>
+        <div style={featuresStyle}>
+          <div style={featureCardStyle}>
+            <div style={featureIconStyle}>🚚</div>
+            <h3 style={featureTitleStyle}>Free Delivery</h3>
+            <p style={featureDescStyle}>
+              Free delivery on orders over ₹4,150. Fresh products delivered to your doorstep.
+            </p>
+          </div>
+          <div style={featureCardStyle}>
+            <div style={featureIconStyle}>🌱</div>
+            <h3 style={featureTitleStyle}>100% Organic</h3>
+            <p style={featureDescStyle}>
+              All our products are certified organic and sourced from local farms.
+            </p>
+          </div>
+          <div style={featureCardStyle}>
+            <div style={featureIconStyle}>❄️</div>
+            <h3 style={featureTitleStyle}>Always Fresh</h3>
+            <p style={featureDescStyle}>
+              Temperature-controlled storage ensures maximum freshness and quality.
+            </p>
+          </div>
+          <div style={featureCardStyle}>
+            <div style={featureIconStyle}>🏆</div>
+            <h3 style={featureTitleStyle}>Premium Quality</h3>
+            <p style={featureDescStyle}>
+              Award-winning dairy products that meet the highest quality standards.
+            </p>
+          </div>
         </div>
       </div>
     </div>
