@@ -19,15 +19,17 @@ const Header = () => {
   }, []);
 
   const headerStyle = {
-    backgroundColor: '#2c5530',
+    backgroundColor: '#F46E76',
     color: 'white',
     padding: '1rem 0',
+    position: 'sticky',
+    top: 0,
+    zIndex: 1000,
     boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
   };
 
   const containerStyle = {
     maxWidth: '1200px',
-    margin: '0 auto',
     padding: '0 1rem',
     display: 'flex',
     justifyContent: 'space-between',
@@ -89,7 +91,7 @@ const Header = () => {
   };
 
   const badgeStyle = {
-    backgroundColor: '#ff6b35',
+    backgroundColor: '#D63447',
     color: 'white',
     borderRadius: '50%',
     width: '20px',

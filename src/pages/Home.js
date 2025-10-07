@@ -46,8 +46,8 @@ const Home = () => {
 
   const gridStyle = {
     display: 'grid',
-    gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fit, minmax(280px, 1fr))',
-    gap: isMobile ? '1.5rem' : '2rem',
+    gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fit, minmax(240px, 1fr))',
+    gap: isMobile ? '1rem' : '1.5rem',
     marginBottom: isMobile ? '2rem' : '3rem'
   };
 
@@ -93,7 +93,7 @@ const Home = () => {
   };
 
   const ctaButtonStyle = {
-    backgroundColor: '#2c5530',
+    backgroundColor: '#F46E76',
     color: 'white',
     border: 'none',
     padding: isMobile ? '0.8rem 1.5rem' : '1rem 2rem',

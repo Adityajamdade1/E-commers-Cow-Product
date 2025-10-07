@@ -97,7 +97,7 @@ function App() {
     
     /* Focus styles for accessibility */
     button:focus, input:focus, textarea:focus, select:focus, a:focus {
-      outline: 2px solid #2c5530;
+      outline: 2px solid #F46E76;
       outline-offset: 2px;
     }
   `;

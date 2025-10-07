@@ -80,8 +80,8 @@ const Shop = () => {
 
   const gridStyle = {
     display: 'grid',
-    gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fit, minmax(280px, 1fr))',
-    gap: isMobile ? '1.5rem' : '2rem',
+    gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fit, minmax(240px, 1fr))',
+    gap: isMobile ? '1rem' : '1.5rem',
     margin: isMobile ? '1rem 0' : '2rem 0'
   };
 

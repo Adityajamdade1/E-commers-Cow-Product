@@ -17,34 +17,35 @@ const ProductCard = ({ product }) => {
 
   const cardStyle = {
     backgroundColor: 'white',
-    borderRadius: isMobile ? '8px' : '12px',
-    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+    borderRadius: isMobile ? '6px' : '8px',
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.08)',
     overflow: 'hidden',
     transition: 'transform 0.3s ease, box-shadow 0.3s ease',
     cursor: 'pointer',
     height: '100%',
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    maxWidth: isMobile ? '100%' : '250px'
   };
 
   const imageStyle = {
     width: '100%',
-    height: isMobile ? '180px' : '200px',
+    height: isMobile ? '140px' : '160px',
     objectFit: 'cover'
   };
 
   const contentStyle = {
-    padding: isMobile ? '1rem' : '1.5rem',
+    padding: isMobile ? '0.8rem' : '1rem',
     flex: 1,
     display: 'flex',
     flexDirection: 'column'
   };
 
   const titleStyle = {
-    fontSize: isMobile ? '1.1rem' : '1.2rem',
+    fontSize: isMobile ? '1rem' : '1.1rem',
     fontWeight: '600',
     color: '#333',
-    marginBottom: '0.5rem'
+    marginBottom: '0.4rem'
   };
 
   const descriptionStyle = {
@@ -62,28 +63,28 @@ const ProductCard = ({ product }) => {
   };
 
   const priceStyle = {
-    fontSize: isMobile ? '1.3rem' : '1.5rem',
+    fontSize: isMobile ? '1.1rem' : '1.3rem',
     fontWeight: '700',
-    color: '#2c5530',
-    marginBottom: '1rem'
+    color: '#F46E76',
+    marginBottom: '0.8rem'
   };
 
   const ratingStyle = {
     display: 'flex',
     alignItems: 'center',
-    gap: '0.5rem',
-    marginBottom: '1rem',
-    fontSize: isMobile ? '0.85rem' : '0.9rem',
+    gap: '0.4rem',
+    marginBottom: '0.8rem',
+    fontSize: isMobile ? '0.8rem' : '0.85rem',
     color: '#666'
   };
 
   const buttonStyle = {
-    backgroundColor: product.inStock ? '#2c5530' : '#ccc',
+    backgroundColor: product.inStock ? '#F46E76' : '#ccc',
     color: 'white',
     border: 'none',
-    padding: isMobile ? '0.6rem 1rem' : '0.75rem 1.5rem',
-    borderRadius: '8px',
-    fontSize: isMobile ? '0.9rem' : '1rem',
+    padding: isMobile ? '0.5rem 0.8rem' : '0.6rem 1rem',
+    borderRadius: '6px',
+    fontSize: isMobile ? '0.85rem' : '0.9rem',
     fontWeight: '600',
     cursor: product.inStock ? 'pointer' : 'not-allowed',
     transition: 'background-color 0.3s ease',
@@ -112,7 +113,7 @@ const ProductCard = ({ product }) => {
       e.target.style.backgroundColor = '#28a745';
       setTimeout(() => {
         e.target.textContent = originalText;
-        e.target.style.backgroundColor = '#2c5530';
+        e.target.style.backgroundColor = '#F46E76';
       }, 1000);
     }
   };
@@ -153,12 +154,12 @@ const ProductCard = ({ product }) => {
           onClick={handleAddToCart}
           onMouseEnter={(e) => {
             if (product.inStock) {
-              e.target.style.backgroundColor = '#1e3a23';
+              e.target.style.backgroundColor = '#E55A63';
             }
           }}
           onMouseLeave={(e) => {
             if (product.inStock) {
-              e.target.style.backgroundColor = '#2c5530';
+              e.target.style.backgroundColor = '#F46E76';
             }
           }}
         >

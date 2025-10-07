@@ -12,7 +12,7 @@ const Footer = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
   const footerStyle = {
-    backgroundColor: '#1a3a1e',
+    backgroundColor: '#D63447',
     color: 'white',
     padding: isMobile ? '2rem 0 1rem' : '3rem 0 1rem',
     marginTop: isMobile ? '2rem' : '4rem'

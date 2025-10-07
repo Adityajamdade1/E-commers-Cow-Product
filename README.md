@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🐄 Cow Products E-commerce Website
 
 A modern, responsive e-commerce website for premium dairy products built with React and styled with inline CSS. All prices are displayed in Indian Rupees (₹).
@@ -229,3 +230,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ---
 
 **Made with ❤️ for dairy lovers everywhere!** 🥛🧀🧈
+=======
+# E-commers-Cow-Product
+>>>>>>> cc62b7f40788dbc58b810ec3be3c9dbcab353029

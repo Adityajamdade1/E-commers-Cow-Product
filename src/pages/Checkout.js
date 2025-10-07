@@ -143,7 +143,7 @@ const Checkout = () => {
   };
 
   const placeOrderStyle = {
-    backgroundColor: '#2c5530',
+    backgroundColor: '#F46E76',
     color: 'white',
     border: 'none',
     padding: '1rem 2rem',
@@ -308,10 +308,10 @@ const Checkout = () => {
             type="submit"
             style={placeOrderStyle}
             onMouseEnter={(e) => {
-              e.target.style.backgroundColor = '#1e3a23';
+              e.target.style.backgroundColor = '#E55A63';
             }}
             onMouseLeave={(e) => {
-              e.target.style.backgroundColor = '#2c5530';
+              e.target.style.backgroundColor = '#F46E76';
             }}
           >
             Place Order

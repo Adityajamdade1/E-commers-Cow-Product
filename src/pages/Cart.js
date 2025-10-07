@@ -83,7 +83,7 @@ const Cart = () => {
   const itemPriceStyle = {
     fontSize: isMobile ? '1rem' : '1.1rem',
     fontWeight: '600',
-    color: '#2c5530'
+    color: '#F46E76'
   };
 
   const quantityControlStyle = {
@@ -168,7 +168,7 @@ const Cart = () => {
   };
 
   const checkoutButtonStyle = {
-    backgroundColor: '#2c5530',
+    backgroundColor: '#F46E76',
     color: 'white',
     border: 'none',
     padding: '1rem 2rem',
@@ -206,7 +206,7 @@ const Cart = () => {
   };
 
   const shopButtonStyle = {
-    backgroundColor: '#2c5530',
+    backgroundColor: '#F46E76',
     color: 'white',
     border: 'none',
     padding: '1rem 2rem',
@@ -231,10 +231,10 @@ const Cart = () => {
             href="/shop" 
             style={shopButtonStyle}
             onMouseEnter={(e) => {
-              e.target.style.backgroundColor = '#1e3a23';
+              e.target.style.backgroundColor = '#E55A63';
             }}
             onMouseLeave={(e) => {
-              e.target.style.backgroundColor = '#2c5530';
+              e.target.style.backgroundColor = '#F46E76';
             }}
           >
             Continue Shopping
@@ -322,10 +322,10 @@ const Cart = () => {
             style={checkoutButtonStyle}
             onClick={() => window.location.href = '/checkout'}
             onMouseEnter={(e) => {
-              e.target.style.backgroundColor = '#1e3a23';
+              e.target.style.backgroundColor = '#E55A63';
             }}
             onMouseLeave={(e) => {
-              e.target.style.backgroundColor = '#2c5530';
+              e.target.style.backgroundColor = '#F46E76';
             }}
           >
             Proceed to Checkout
