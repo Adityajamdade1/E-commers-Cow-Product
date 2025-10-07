@@ -49,9 +49,9 @@ const Navbar = ({ onCategoryChange, selectedCategory }) => {
   };
 
   const categoryButtonStyle = (isActive) => ({
-    backgroundColor: isActive ? '#2c5530' : 'transparent',
+    backgroundColor: isActive ? '#F46E76' : 'transparent',
     color: isActive ? 'white' : '#333',
-    border: `2px solid ${isActive ? '#2c5530' : '#ddd'}`,
+    border: `2px solid ${isActive ? '#F46E76' : '#ddd'}`,
     padding: isMobile ? '0.4rem 0.8rem' : '0.5rem 1rem',
     borderRadius: '25px',
     fontSize: isMobile ? '0.8rem' : '0.9rem',
@@ -85,7 +85,7 @@ const Navbar = ({ onCategoryChange, selectedCategory }) => {
   };
 
   const searchButtonStyle = {
-    backgroundColor: '#2c5530',
+    backgroundColor: '#F46E76',
     color: 'white',
     border: 'none',
     padding: '0.5rem 1rem',
@@ -129,7 +129,7 @@ const Navbar = ({ onCategoryChange, selectedCategory }) => {
                 onMouseEnter={(e) => {
                   if (selectedCategory !== category.id) {
                     e.target.style.backgroundColor = '#f0f0f0';
-                    e.target.style.borderColor = '#2c5530';
+                    e.target.style.borderColor = '#F46E76';
                   }
                 }}
                 onMouseLeave={(e) => {
@@ -150,7 +150,7 @@ const Navbar = ({ onCategoryChange, selectedCategory }) => {
               placeholder="Search products..."
               style={searchInputStyle}
               onFocus={(e) => {
-                e.target.style.borderColor = '#2c5530';
+                e.target.style.borderColor = '#F46E76';
               }}
               onBlur={(e) => {
                 e.target.style.borderColor = '#ddd';
@@ -162,7 +162,7 @@ const Navbar = ({ onCategoryChange, selectedCategory }) => {
                 e.target.style.backgroundColor = '#1e3a23';
               }}
               onMouseLeave={(e) => {
-                e.target.style.backgroundColor = '#2c5530';
+                e.target.style.backgroundColor = '#F46E76';
               }}
             >
               🔍 Search

@@ -25,13 +25,16 @@ const ProductCard = ({ product }) => {
     height: '100%',
     display: 'flex',
     flexDirection: 'column',
-    maxWidth: isMobile ? '100%' : '250px'
+    width: '100%',
+    maxWidth: isMobile ? 'none' : '250px'
   };
 
   const imageStyle = {
     width: '100%',
-    height: isMobile ? '140px' : '160px',
-    objectFit: 'cover'
+    height: isMobile ? '160px' : '160px',
+    objectFit: 'cover',
+    display: 'block',
+    backgroundColor: '#f5f5f5'
   };
 
   const contentStyle = {
@@ -95,7 +98,7 @@ const ProductCard = ({ product }) => {
     position: 'absolute',
     top: '1rem',
     right: '1rem',
-    backgroundColor: product.inStock ? '#22c55e' : '#ef4444',
+    backgroundColor: product.inStock ? '#22c55e' : 'red',
     color: 'white',
     padding: '0.25rem 0.75rem',
     borderRadius: '20px',
@@ -135,8 +138,22 @@ const ProductCard = ({ product }) => {
         e.target.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
       }}
     >
-      <div style={{ position: 'relative' }}>
-        <img src={product.image} alt={product.name} style={imageStyle} />
+      <div style={{ 
+        position: 'relative', 
+        width: '100%', 
+        overflow: 'hidden',
+        backgroundColor: '#f5f5f5'
+      }}>
+        <img 
+          src={product.image} 
+          alt={product.name} 
+          style={imageStyle}
+          loading="lazy"
+          onError={(e) => {
+            e.target.style.display = 'none';
+            e.target.parentElement.innerHTML = '<div style="display: flex; align-items: center; justify-content: center; height: 160px; background: #f0f0f0; color: #999; font-size: 0.9rem;">Image not available</div>';
+          }}
+        />
         <div style={stockBadgeStyle}>
           {product.inStock ? 'In Stock' : 'Out of Stock'}
         </div>

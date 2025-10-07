@@ -25,14 +25,14 @@ const Carousel = () => {
     },
     {
       id: 2,
-      image: 'https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=1200&h=500&fit=crop',
+      image: 'https://www.wisconsincheesemart.com/cdn/shop/files/Artisan-Assortment-WEB.png?v=1729282141&width=533',
       title: 'Artisan Cheese Collection',
       subtitle: 'Aged to Perfection',
       description: 'Discover our selection of handcrafted cheeses made with traditional methods'
     },
     {
       id: 3,
-      image: 'https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=1200&h=500&fit=crop',
+      image: 'https://t3.ftcdn.net/jpg/05/85/50/46/360_F_585504652_mx2E5zY3SZxOE9yjuHArUIMWFweAgHY6.jpg',
       title: 'Organic Dairy Products',
       subtitle: '100% Natural & Healthy',
       description: 'Nourish your family with our certified organic dairy products'
@@ -108,7 +108,7 @@ const Carousel = () => {
   };
 
   const buttonStyle = {
-    backgroundColor: '#2c5530',
+    backgroundColor: '#F46E76',
     color: 'white',
     border: 'none',
     padding: isMobile ? '0.8rem 1.5rem' : '1rem 2rem',
@@ -235,7 +235,7 @@ const Carousel = () => {
                   e.target.style.backgroundColor = '#1e3a23';
                 }}
                 onMouseLeave={(e) => {
-                  e.target.style.backgroundColor = '#2c5530';
+                  e.target.style.backgroundColor = '#F46E76';
                 }}
               >
                 Shop Now
